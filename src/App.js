@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import Transaction from "./component/Transction";
+import './App.css'
 
 function App() {
+  const design = {color:"red",textAlign:'center'}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          aaaa
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1 style={design}>โปรแกรมรายรับ-รายจ่าย</h1>
+      <Transaction />
     </div>
   );
 }
